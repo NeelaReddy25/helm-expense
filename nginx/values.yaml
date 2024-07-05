@@ -3,4 +3,5 @@ configmap:
 deployment:
   replicas: 2
   imageVersion: mainline-bookworm-perl
-nodePort: 32134
+service:
+  nodePort: 32134
