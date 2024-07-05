@@ -7,7 +7,7 @@ metadata:
     app: nginx
     purpose: helm
 spec: 
-  replicas: {{ .values.deployment.replicas }}
+  replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
       app: nginx
@@ -21,4 +21,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:{{ .values.deployment.imageVersion }}
+        image: nginx:{{ .Values.deployment.imageVersion }}
